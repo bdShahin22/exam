@@ -59,11 +59,12 @@ class TextStylingWithSnackbar extends StatelessWidget {
               },
               child: const Text('Click Me'),
             ),
-            const Row(
+             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text('Welcome to',style: TextStyle(
-                  fontSize: 18
+                  fontSize: 18,
+                    fontWeight: FontWeight.bold
                 ),),
                 Text(' Flutter!',style: TextStyle(
                   color: Colors.blue,
