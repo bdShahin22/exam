@@ -10,13 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: const TextStylingSnackbar(),
+      home: const TextStylingWithSnackbar(),
     );
   }
 }
 
-class TextStylingSnackbar extends StatelessWidget {
-  const TextStylingSnackbar({super.key});
+class TextStylingWithSnackbar extends StatelessWidget {
+  const TextStylingWithSnackbar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class TextStylingSnackbar extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 20),
-            // TextButton with Snackbar
+
             TextButton(
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
